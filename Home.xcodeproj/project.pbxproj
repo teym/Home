@@ -13,6 +13,7 @@
 		C8D881DC1F73C28C00250939 /* Module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D881DB1F73C28C00250939 /* Module.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C8D881DE1F73C28F00250939 /* Router.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D881DD1F73C28F00250939 /* Router.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C8D881E01F73C2EF00250939 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D881DF1F73C2EF00250939 /* Home.m */; };
+		C8D881EE1F741F1100250939 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8D881ED1F741E3900250939 /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8D881EE1F741F1100250939 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
