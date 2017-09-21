@@ -13,7 +13,7 @@
 		C8D881DC1F73C28C00250939 /* Module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D881DB1F73C28C00250939 /* Module.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C8D881DE1F73C28F00250939 /* Router.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D881DD1F73C28F00250939 /* Router.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C8D881E01F73C2EF00250939 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D881DF1F73C2EF00250939 /* Home.m */; };
-		C8D881E21F73C4AC00250939 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8D881E11F73C4AC00250939 /* Home.storyboard */; };
+		C8D881EC1F741BD700250939 /* Home.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C8D881EB1F741BD700250939 /* Home.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,7 @@
 		C8D881DB1F73C28C00250939 /* Module.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Module.framework; path = Carthage/Build/iOS/Module.framework; sourceTree = "<group>"; };
 		C8D881DD1F73C28F00250939 /* Router.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Router.framework; path = Carthage/Build/iOS/Router.framework; sourceTree = "<group>"; };
 		C8D881DF1F73C2EF00250939 /* Home.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
-		C8D881E11F73C4AC00250939 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		C8D881EB1F741BD700250939 /* Home.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Home.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,7 @@
 				C863DB891F727A6D002CD75B /* Home.h */,
 				C8D881DF1F73C2EF00250939 /* Home.m */,
 				C863DB8A1F727A6D002CD75B /* Info.plist */,
-				C8D881E11F73C4AC00250939 /* Home.storyboard */,
+				C8D881EB1F741BD700250939 /* Home.bundle */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -202,7 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8D881E21F73C4AC00250939 /* Home.storyboard in Resources */,
+				C8D881EC1F741BD700250939 /* Home.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

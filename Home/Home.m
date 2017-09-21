@@ -26,7 +26,7 @@
         id<Router> router = [injection instanceForInterface:@protocol(Router)];
         id<Router> homeRouter = [router addSubRouter:@"/home"];
         [homeRouter addRouter:@"/index" competent:^UIViewController *(NSString *p, NSDictionary *pp) {
-            return [[UIStoryboard storyboardWithName:@"home" bundle:nil] instantiateViewControllerWithIdentifier:@"home"];
+            return [[UIStoryboard storyboardWithName:@"home" bundle:[NSBundle bundleWithIdentifier:@"home"]] instantiateViewControllerWithIdentifier:@"home"];
         }];
     }
     return self;
