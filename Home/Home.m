@@ -13,19 +13,24 @@
 @interface Home: NSObject <Module>
 @end
 
-@implementation
+@implementation Home
 +(NSArray*) Interfaces{
     return nil;
+}
++(BOOL) loadWhenStart{
+    return YES;
 }
 -(id) initWithInjection:(id<ModuleInjection>) injection{
     self = [super init];
     if (self) {
         id<Router> router = [injection instanceForInterface:@protocol(Router)];
         id<Router> homeRouter = [router addSubRouter:@"/home"];
-        [homeRouter addRouter:@"/index" competent:UIViewController*^(NSString*,NSDictionary*){
+        [homeRouter addRouter:@"/index" competent:^UIViewController *(NSString *p, NSDictionary *pp) {
             return [[UIStoryboard storyboardWithName:@"home" bundle:nil] instantiateViewControllerWithIdentifier:@"home"];
         }];
     }
     return self;
 }
 @end
+
+ModuleLoader(Home)
